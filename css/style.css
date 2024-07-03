@@ -1,0 +1,693 @@
+html {
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  height: 50px;
+  width: 99%;
+  position: fixed;
+  padding: 30px;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.nav-links {
+  display: block;
+}
+
+.ul-class {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-li-items {
+  font-family: 'ZonaPro',sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding-right: 65px;
+}
+
+.nav-li-items > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-li-items > a:hover {
+  color: orange;
+  transition: .4s;
+}
+
+#header-logo {
+  height: 32px;
+}
+
+.hamburger-lines {
+  z-index: 3;
+  height: max-content;
+  width: 28px;
+  position: fixed;
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines-resp{
+  z-index: 4;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 72px;
+  height: 18px;
+  top: 32px;
+  width: 25px;
+  left: 1840px;
+  position: fixed;
+  display: block;
+  flex-direction: column;
+}
+
+.line {
+  position: relative;
+  top: 2px;
+  display: block;
+  height: 4px;
+  width: 105%;
+  border-radius: 10px;
+  background: black;
+}
+
+.line-resp {
+  display: block;
+  height: 4px;
+  width: 105%;
+  border-radius: 10px;
+  background: black;
+}
+
+.main-container {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center-text {
+  color: black;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'ZonaPro',sans-serif;
+}
+
+.center-text span {
+  color: orange;
+}
+
+.instagram,
+.twitter,
+.linkedn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 5px;
+}
+
+.instagram:hover,
+.twitter:hover,
+.linkedn:hover {
+  background-color: orange;
+  color: white;
+  transition: .6s;
+}
+
+.instagram svg,
+.twitter svg,
+.linkedn svg {
+  padding: 10px;
+  position: relative;
+  fill: currentColor;
+  color: white;
+}
+
+.social-adress {
+  z-index: 4;
+  bottom: 20px;
+  padding-left: 30px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+::selection {
+  background: #cce2ff;
+  color: white;
+}
+
+.cookie-settings {
+  align-self: center;
+  position: fixed;
+  bottom: 20px;
+  border: 2px solid #f3f3f4;
+  padding: 2px;
+  background-color: #f3f3f4;
+  display: flex;
+  flex-direction: row;
+  border-radius: 45px;
+  max-width: 900px;
+  font-family: 'ZonaPro',sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.cookie-settings button {
+  margin-top: 10px;
+  border: 1px solid black;
+  background-color: transparent;
+  width: 300px;
+  height: 45px;
+  padding: 2px;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cookie-settings p {
+  padding-left: 10px;
+  margin-left: 20px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.cookie-settings span a {
+  color: orange;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cookie-settings button:hover {
+  border: 1px solid orange;
+  background-color: orange;
+  color: white;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.center-text-works {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 19%;
+  padding-bottom: 28%;
+}
+
+.cookie-settings span {
+  color: orange;
+}
+
+.works {
+  font-family: 'ZonaPro',sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+  display: flex;
+  margin: auto;
+  padding-top: 90px;
+  flex-direction: row;
+}
+
+.work2,
+.work3 {
+  margin-left: 20px;
+}
+
+.work1 {
+  margin-left: 20px;
+}
+
+.work1:hover,
+.work2:hover,
+.work3:hover {
+  transition: .4s;
+  border-color: black;
+}
+
+.animate-min,
+.animate {
+  position: relative;
+}
+
+.animate::before, .animate:after {
+  content: "";
+  position: absolute;
+  background: black;
+  bottom: -10px;
+  left: 0;
+  height: 11px;
+}
+
+.animate::before {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.animate::after {
+  width: 0;
+  transition: all 0.6s;
+}
+
+.animate-min::before, .animate-min:after {
+  content: "";
+  position: absolute;
+  background: black;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+}
+
+.animate-min::before {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.animate-min::after {
+  width: 0;
+  background: orange;
+  transition: all 0.6s;
+}
+
+.animate.work1::before, .animate.work1:after {
+  mask: url(https://uibee.co/assets/img/underline-dashed.svg);
+}
+
+.animate.work2::before, .animate.work2:after {
+  mask: url(https://uibee.co/assets/img/underline-angular.svg);
+}
+
+.animate.work3::before, .animate.work3:after {
+  mask: url(https://uibee.co/assets/img/underline-waved.svg);
+}
+
+.animate-min:hover::before, .animate-min:hover::after,
+.animate:hover:before, .animate:hover::after {
+  animation: movemask 2s linear infinite;
+}
+
+@keyframes movemask {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 114px 0;
+    mask-position: 114px 0;
+  }
+}
+
+.animate-min:hover::after,
+.animate:hover:after {
+  width: 100%;
+}
+
+.work1,
+.work2,
+.work3 {
+  color: black;
+  text-decoration: none;
+}
+
+.whatjobs {
+  font-family: 'ZonaPro',sans-serif;
+  margin: auto;
+  max-width: 1100px;
+  font-weight: 400;
+  padding-bottom: 500px;
+}
+
+.whatjobs h3 {
+  font-weight: 400;
+  font-size: 19px;
+  opacity: 0.9;
+}
+
+.whatjobs p {
+  font-size: 45px;
+}
+
+.whatjobs a button {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 20px;
+  width: 230px;
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.whatjobs button:hover {
+  border: 1px solid orange;
+  background-color: orange;
+  color: white;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.tanim-container {
+  font-family: 'ZonaPro',sans-serif;
+  margin: auto;
+  padding-left: 200px;
+  max-width: 1250px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tanim-texts h3 {
+  font-weight: 300;
+  position: sticky;
+  top: 37%;
+  display: inline-block;
+}
+
+.tanim-texts p {
+  font-size: 55px;
+  position: sticky;
+  top: 40%;
+  margin-right: 200px;
+  font-weight: 600;
+}
+
+.tanim-elements a button {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 20px;
+  width: 220px;
+  border-radius: 32px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tanim-elements button:hover {
+  border: 1px solid orange;
+  background-color: orange;
+  color: white;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.tanim-elements {
+  padding: 100px;
+  position: relative;
+  top: -20px;
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+}
+
+.element-2,
+.element-1 {
+  padding-right: 70px;
+  padding-top: 70px;
+}
+
+.element-2 > img {
+  height: calc(100% - 250px);
+  width: 100%;
+  display: none;
+  z-index: 3;
+}
+
+.element-2:hover img {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#tanim-element-header {
+  font-size: 28px;
+  z-index: 1;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+#tanim-gorus-desc {
+  z-index: 1;
+  font-size: 16px;
+  color: #03030F;
+  opacity: 0.8;
+  line-height: 25px;
+  max-width: 550px;
+  font-weight: 500;
+}
+
+.tanim-elements p {
+  line-height: 35px;
+  font-family: 'ZonaPro',sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.footer-area {
+  display: flex;
+  position: relative;
+  left: -10%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.footer-area h3 {
+  font-family: 'ZonaPro',sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.footer-area a {
+  font-size: 50px;
+  max-width: fit-content;
+  font-family: 'ZonaPro',sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.animate.footer-a::before, .animate.footer-a:after {
+  mask: url(https://uibee.co/assets/img/underline-waved.svg);
+}
+
+.eposta {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: 'ZonaPro',sans-serif;
+  font-weight: 700;
+}
+
+.eposta a {
+  opacity: 0.5;
+  padding-top: 10px;
+  max-width: fit-content;
+  font-size: 16px;
+}
+
+.eposta a:hover {
+  transition: 0.4s;
+  opacity: 0.8;
+  color: orange;
+}
+
+.mail-adress {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.adress {
+  padding-left: 200px;
+  font-size: 16px;
+  font-family: 'ZonaPro',sans-serif;
+  font-weight: 700;
+}
+
+.adress h5 {
+  font-family: 'ZonaPro',sans-serif;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.lisans {
+  opacity: 0.5;
+  font-family: 'ZonaPro',sans-serif;
+  padding-top: 50px;
+  max-width: 170px;
+  padding-bottom: 40px;
+}
+
+.responsive-menu {
+  display: none;
+  transition: 0.4s;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.responsive-items {
+  position: fixed;
+  z-index: 9;
+}
+
+#respon-img {
+  position: fixed;
+  left: 73%;
+  z-index: 3;
+  height: 100%;
+}
+
+.area {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 1080px;
+  background-color: white;
+  display: flex;
+}
+
+#resp-ilet span {
+  font-family: 'ZonaPro',sans-serif;
+  font-size: 20px;
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.616);
+}
+
+#resp-ilet span:hover {
+  opacity: 1;
+  transition: .4s;
+}
+
+#resp-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  padding-left: 150px;
+  padding-top: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right h5 {
+  font-family: 'ZonaPro',sans-serif;
+  font-size: 16px;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.right span {
+  font-family: 'ZonaPro',sans-serif;
+  font-size: 20px;
+}
+
+.right span a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+}
+
+.right span a:hover {
+  transition: .4s;
+  opacity: 1;
+}
+
+.area ul {
+  font-family: 'ZonaPro',sans-serif;
+  padding-left: 400px;
+  padding-top: 320px;
+  list-style: none;
+}
+
+.area ul li {
+  margin-bottom: 20px;
+}
+
+.area ul li a {
+  margin-left: 50px;
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+
+.area ul li a:hover {
+  transition: .2s;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1390px) {
+  .nav-links {
+    display: none;
+  }
+  .center-text-works {
+    padding-top: 40%;
+    padding-bottom: 35%;
+  }
+  .center-text {
+    font-size: 35px;
+  }
+  .works {
+    font-size: 35px;
+  }
+  .social-adress {
+    display: none;
+  }
+  .whatjobs {
+    padding: 80px;
+  }
+  .tanim-texts h3 {
+    font-size: 15px;
+    position: relative;
+  }
+  .tanim-texts p {
+    margin: 0;
+    position: relative;
+  }
+  .whatjobs p {
+    font-size: 32px;
+    line-height: 60px;
+  }
+  .tanim-container {
+    flex-direction: column;
+    margin: 0;
+    padding-left: 50px;
+  }
+  .tanim-elements {
+    top: 30px;
+    padding: 0;
+  }
+  .tanim-elements a button {
+    padding: 15px;
+    width: 180px;
+  }
+  .tanim-elements p {
+    max-width: 800px;
+  }
+  .element-1 {
+    padding-bottom: 200px;
+  }
+  .respon-img {
+    display: none;
+  }
+}

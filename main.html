@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIBee Labs</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <a href="https://uibee.co" target="_blank"><img src="https://uibee.co/assets/img/logo-black.svg" id="header-logo"></a>
+        <ul class="ul-class">
+          <li class="nav-li-items nav-links"><a href="https://uibee.co/why-uibee" target="_blank">Why UIBee?</a></li>
+          <li class="nav-li-items nav-links"><a href="https://uibee.co/about" target="_blank">About</a></li>
+          <li class="nav-li-items nav-links"><a href="https://uibee.co/labs" target="_blank">Labs</a></li>
+          <li class="nav-li-items nav-links" style="padding-right: 40px;"><a href="https://www.anymile.io/" target="_blank">Go AnyMile</a></li>
+          <li class="nav-li-items hamburger">
+            <div class="hamburger-lines" onclick="responsivemenu()">
+              <span class="line-resp"></span>
+              <span class="line-resp" style="margin-top: 5px;"></span>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="responsive-menu">
+        <div class="hamburger-lines-resp" onclick="responsivemenu()">
+          <span class="line"></span>
+          <span class="line" style="margin-top: 5px;"></span>
+        </div>
+        <img src="https://uibee.co/assets/img/fullmenu.webp" id="respon-img">
+        <div class="area">
+          <div class="left">
+            <ul id="resp-ul">
+              <li id="resp-menu">Menü</li>
+              <li><a href="https://uibee.co/why-uibee" target="_blank">Why UIBee?</a></li>
+              <li><a href="https://uibee.co/about" target="_blank">About</a></li>
+              <li><a href="https://uibee.co/labs" target="_blank">Labs</a></li>
+              <li><a href="https://www.anymile.io/" target="_blank">Go AnyMile</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <h5>İletişim</h5>
+            <span><a href="mailto:info@uibee.co">info@uibee.co</a></span>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div class="social-adress">
+    <a href="https://linkedin.com/company/uibee" target="_blank" class="linkedn">
+        <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" style="left:2px; top:1px;">
+          <path d="M8.028 5.8582C8.84 5.0284 9.89801 4.4855 11.128 4.4855C12.42 4.4855 13.659 4.9987 14.572 5.9122C15.486 6.8257 15.999 8.0647 15.999 9.3566V15.999H14.228V9.3566C14.228 8.5345 13.901 7.746 13.32 7.1647C12.738 6.5834 11.95 6.2568 11.128 6.2568C10.306 6.2568 9.517 6.5834 8.936 7.1647C8.355 7.746 8.028 8.5345 8.028 9.3566V15.999H6.257V4.9283H8.028V5.8582ZM1.828 3.157C1.476 3.157 1.138 3.017 0.889 2.76787C0.64 2.51873 0.5 2.18082 0.5 1.82849C0.5 1.47615 0.64 1.13824 0.889 0.88911C1.138 0.63997 1.476 0.5 1.828 0.5C2.181 0.5 2.51901 0.63997 2.76801 0.88911C3.01701 1.13824 3.157 1.47615 3.157 1.82849C3.157 2.18082 3.01701 2.51873 2.76801 2.76787C2.51901 3.017 2.181 3.157 1.828 3.157ZM0.943001 4.9283H2.714V15.999H0.943001V4.9283Z"></path>
+        </svg>   
+      </a>
+      <a href="https://twitter.com/uibeelabs" target="_blank" class="twitter">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 20px; right: 21px;">
+          <path d="M57.1264 18.5607L56.9028 18.724L56.9225 19.0001C56.9617 19.5479 56.9619 20.0987 56.9619 20.6701C56.9619 37.795 43.9305 57.4899 20.1421 57.4899C13.548 57.4899 7.37709 55.7728 2.03526 52.7474C2.40708 52.7591 2.78284 52.764 3.1675 52.764C9.4142 52.764 15.1669 50.6536 19.7602 47.0535L20.8623 46.1897L19.4623 46.1601C14.1962 46.0488 9.74194 42.7711 7.93272 38.1657C8.49649 38.2284 9.07015 38.2665 9.665 38.2665C10.8876 38.2665 12.1075 38.0979 13.2422 37.8039L13.2161 36.8298C7.6453 35.7005 3.41772 30.9454 3.11611 25.1149C4.74703 25.8954 6.58068 26.3762 8.50892 26.4489L10.2786 26.5156L8.8051 25.5332C5.4058 23.267 3.18012 19.4001 3.18012 15.0254C3.18012 12.9409 3.67365 11.0129 4.55184 9.29285C11.0918 17.036 20.7212 22.0689 31.4864 22.6313L32.1343 22.6652L32.002 22.03C31.8048 21.0835 31.6876 20.1028 31.6876 19.127C31.6876 12.1736 37.3125 6.51025 44.3044 6.51025C47.9384 6.51025 51.2187 8.03355 53.5232 10.4942L53.7116 10.6953L53.9823 10.6434C56.5372 10.1535 59.0029 9.27901 61.2553 8.09475C60.1996 10.4653 58.423 12.451 56.1902 13.7839L56.5 14.7104C58.5962 14.4848 60.6387 13.9835 62.5698 13.2864C61.0102 15.2787 59.1738 17.0657 57.1264 18.5607Z" stroke-width="4"></path>
+        </svg>
+      </a>
+      <a href="https://instagram.com/uibeelabs" target="_blank" class="instagram">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+         <path d="M10 7C9.2044 7 8.4413 7.3161 7.8787 7.8787C7.3161 8.4413 7 9.2044 7 10C7 10.7956 7.3161 11.5587 7.8787 12.1213C8.4413 12.6839 9.2044 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.2044 12.6839 8.4413 12.1213 7.8787C11.5587 7.3161 10.7956 7 10 7ZM10 5C11.3261 5 12.5979 5.5268 13.5355 6.4645C14.4732 7.4021 15 8.6739 15 10C15 11.3261 14.4732 12.5979 13.5355 13.5355C12.5979 14.4732 11.3261 15 10 15C8.6739 15 7.4021 14.4732 6.4645 13.5355C5.5268 12.5979 5 11.3261 5 10C5 8.6739 5.5268 7.4021 6.4645 6.4645C7.4021 5.5268 8.6739 5 10 5ZM16.5 4.75C16.5 5.0815 16.3683 5.3995 16.1339 5.6339C15.8995 5.8683 15.5815 6 15.25 6C14.9185 6 14.6005 5.8683 14.3661 5.6339C14.1317 5.3995 14 5.0815 14 4.75C14 4.41848 14.1317 4.10054 14.3661 3.86612C14.6005 3.6317 14.9185 3.5 15.25 3.5C15.5815 3.5 15.8995 3.6317 16.1339 3.86612C16.3683 4.10054 16.5 4.41848 16.5 4.75ZM10 2C7.526 2 7.122 2.007 5.971 2.058C5.187 2.095 4.661 2.2 4.173 2.39C3.739 2.558 3.426 2.759 3.093 3.093C2.78001 3.3954 2.53935 3.76458 2.389 4.173C2.199 4.663 2.094 5.188 2.058 5.971C2.006 7.075 2 7.461 2 10C2 12.474 2.007 12.878 2.058 14.029C2.095 14.812 2.2 15.339 2.389 15.826C2.559 16.261 2.759 16.574 3.091 16.906C3.428 17.242 3.741 17.443 4.171 17.609C4.665 17.8 5.191 17.906 5.971 17.942C7.075 17.994 7.461 18 10 18C12.474 18 12.878 17.993 14.029 17.942C14.811 17.905 15.338 17.8 15.826 17.611C16.259 17.442 16.574 17.241 16.906 16.909C17.243 16.572 17.444 16.259 17.61 15.829C17.8 15.336 17.906 14.809 17.942 14.029C17.994 12.925 18 12.539 18 10C18 7.526 17.993 7.122 17.942 5.971C17.905 5.189 17.8 4.661 17.61 4.173C17.4593 3.765 17.2191 3.39596 16.907 3.093C16.6047 2.77985 16.2355 2.53917 15.827 2.389C15.337 2.199 14.811 2.094 14.029 2.058C12.925 2.006 12.539 2 10 2ZM10 0C12.717 0 13.056 0.00999994 14.122 0.0599999C15.187 0.11 15.912 0.277 16.55 0.525C17.21 0.779 17.766 1.123 18.322 1.678C18.8305 2.1779 19.224 2.78259 19.475 3.45C19.722 4.087 19.89 4.813 19.94 5.878C19.987 6.944 20 7.283 20 10C20 12.717 19.99 13.056 19.94 14.122C19.89 15.187 19.722 15.912 19.475 16.55C19.2247 17.2178 18.8311 17.8226 18.322 18.322C17.822 18.8303 17.2173 19.2238 16.55 19.475C15.913 19.722 15.187 19.89 14.122 19.94C13.056 19.987 12.717 20 10 20C7.283 20 6.944 19.99 5.878 19.94C4.813 19.89 4.088 19.722 3.45 19.475C2.78233 19.2245 2.17753 18.8309 1.678 18.322C1.16941 17.8222 0.77593 17.2175 0.525 16.55C0.277 15.913 0.11 15.187 0.0599999 14.122C0.0129999 13.056 0 12.717 0 10C0 7.283 0.00999994 6.944 0.0599999 5.878C0.11 4.812 0.277 4.088 0.525 3.45C0.77524 2.78218 1.1688 2.17732 1.678 1.678C2.17767 1.16923 2.78243 0.77573 3.45 0.525C4.088 0.277 4.812 0.11 5.878 0.0599999C6.944 0.0129999 7.283 0 10 0Z"></path>
+        </svg>
+      </a>
+    </div>
+  <div class="main-container">
+    <div class="center-text-works">
+      <div class="center-text">
+        Fikirden Uygulamaya<br> Yapay Zeka ile <span>5 Saniyede</span> Geçin
+      </div>
+      <div class="works">
+        <a href="#analysis" class="work1 animate">Wireframe.</a>
+        <a href="#design" class="work2 animate">Design.</a>
+        <a href="#development" class="work3 animate">Code.</a> 
+      </div>
+    </div>
+
+    <div class="whatjobs">
+      <h3>Ne Yapıyoruz?</h3>
+      <p>2012'den beri uygulamalar tasarlıyor ve geliştiriyoruz. Planlama ve fikir
+         aşamasından uygulamaya kadar tüm ürünlerimizde yaşam döngüsünü esas alıyoruz.
+      </p>
+      <a href="https://uibee.co/services"><button>Daha Fazla Bilgi Al</button></a>
+    </div>
+
+    <div class="tanim-container">
+      <div class="tanim-texts">
+        <h3>01</h3>
+        <p>Tanım</p>
+      </div>
+      <div class="tanim-elements">
+        <p>
+          Bir projeye başlamadan önce olmazsa olmaz uygulanması gereken adımlar bulunur. Projenin
+          ve problemin tanımı da bunların başında yer alır.
+        </p>
+        <a href="https://uibee.co/services"><button>Daha Fazla Bilgi Al</button></a>
+
+        <div class="elements">
+          <div class="element-1">
+            <h3 id="tanim-element-header">Kullanıcı Görüşmeleri</h3>
+            <p id="tanim-gorus-desc">
+              Kullanıcı odaklı herhangi bir projemizde tasarım aşamasına geçmeden önce; 
+              hedef kullanıcı davranışlarını anlamak, temel 
+              bulguları tespit etmek adına kullanıcı görüşmeleri gerçekleştirilmektedir. 
+            </p>
+          </div>
+          <div class="element-2">
+            <img src="https://uibee.co/assets/img/services/netnography.webp" alt="Netnograp">
+            <h3 id="tanim-element-header">Netrografi</h3>
+            <p id="tanim-gorus-desc">
+              Etnografi yöntemlerini uyarlayarak, çağdaş iletişim araçları üzerinde h
+              edef kitle ve pazara yönelik araştırma tekniğidir. Anahtar kelimeler için genel 
+              ve sosyal medya üzerinde araştırma yapılabilir.
+            </p>
+          </div>
+        </div>
+        <div class="element-1">
+          <h3 id="tanim-element-header" style="max-width: 200px; padding-bottom: 20px;">Rakip Analizi</h3>
+          <p id="tanim-gorus-desc" style="max-width: 300px;">
+            Projenin bulunduğu sektörde yer alan ve rekabet edilecek tüm projeler incelenerek
+             neler yapılabiceği, nelerden uzak durulması gerekildiği ve farklı atılması
+             gereken adımların detaylı çalışıldığı adımdır. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="tanim-container" id="analysis">
+      <div class="tanim-texts">
+        <h3>02</h3>
+        <p>Analiz</p>
+      </div>
+      <div class="tanim-elements">
+        <p>
+          Bir projeyi hayata geçirirken kullanıcı geri bildirimleri ve müşteri isterleri oldukça
+          önemlidir. Peki biz bu bilgileri kaç aşamada değerlendiriyoruz?
+        </p>
+        <a href="https://uibee.co/services"><button>Daha Fazla Bilgi Al</button></a>
+
+        <div class="elements">
+          <div class="element-1">
+            <h3 id="tanim-element-header">Kullanılabilirlik Testi</h3>
+            <p id="tanim-gorus-desc">
+              Ürün bir kullanıcıya sunulurken, kullanıcıdan bir kaç görevi tamamlaması istenir. Bu sırada
+               araştırmacı tarafından kullanıcının etkileşimleri not alınır ve geri bildirimleri dinlenir.
+            </p>
+          </div>
+          <div class="element-2">
+            <h3 id="tanim-element-header">İlişki Haritası</h3>
+            <p id="tanim-gorus-desc" style="max-width: 600px;">
+              Site üzerinde bulunacak olan web sayfalarının ve bu sayfalarda yer alacak alanların 
+              belirlendiği, sayfalar arasında uygulanacak etkileşimlerin planlandığı tekniktir.
+            </p>
+          </div>
+        </div>
+        <div class="elements">
+          <div class="element-1">
+            <h3 id="tanim-element-header">Persona</h3>
+            <p id="tanim-gorus-desc" style="max-width: 490px;">
+              Hedef kitlenin belirlenmesi amacıyla hayali karakterler oluşturarak bu karaktere yönelik kişilik 
+              kartları yaratılma tekniğidir. Persona tekniği ile 
+              hedef pazar belirlenir ve pazarlama bu alana yönelik yapılır.
+            </p>
+          </div>
+          <div class="element-2">
+            <h3 id="tanim-element-header">Affinity Map</h3>
+            <p id="tanim-gorus-desc">
+              Araştırma çalışmalarından elde edilen fikir ve gözlemler, müşteri isterleri ve ekip üyelerinden 
+              alınan geri bildirimler bir araya getirilir, gruplandırılır ve sürece dahil edilir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tanim-container" id="design">
+      <div class="tanim-texts">
+        <h3>03</h3>
+        <p>Tasarım</p>
+      </div>
+      <div class="tanim-elements">
+        <p>
+          Göz alıcı ve akılda kalıcı tasarımlar oluşturarak müşterileriniz ve
+          kullanıcılarınız ile doğru iletişime geçmek ister misiniz?
+        </p>
+        <a href="#"><button>Daha Fazla Bilgi Al</button></a>
+
+        <div class="elements">
+          <div class="element-1">
+            <h3 id="tanim-element-header">Stil Kılavuzu</h3>
+            <p id="tanim-gorus-desc">
+              Belirli bir konu veya alana yönelik seçilen görsel nesne, metin veya
+               görsellerin örnekleriyle birlikte görsel olarak sunulduğu tekniktir. 
+            </p>
+          </div>
+          <div class="element-2">
+            <h3 id="tanim-element-header">Wireframe</h3>
+            <p id="tanim-gorus-desc">
+              Projede bulunan sayfalarda yer alacak alanların ve bu alanlarda yer alacak ögelerin kaba taslak belirtildiği taslak çizimlerdir
+              . UI tasarımlar, wireframelerden elde edilen çıktıya göre dizayn edilir.
+            </p>
+          </div>
+        </div>
+        <div class="elements">
+          <div class="element-1">
+            <h3 id="tanim-element-header">UI Tasarım</h3>
+            <p id="tanim-gorus-desc">
+              Projenin kullanıcıyla etkileşime gireceği sayfaların tasarım araçları yardımıyla belirlendiği aşamadır.
+            </p>
+          </div>
+          <div class="element-2">
+            <h3 id="tanim-element-header">Prototipleme</h3>
+            <p id="tanim-gorus-desc">
+              Projenin kodlama aşamasına geçmeden, nasıl çalışacağını ve işlevselliğinin gösterildiği simülasyon aşamasıdır. 
+              Prototip aşaması, proje üzerinde senaryonun test edilmesine olanak verir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tanim-container" id="development">
+      <div class="tanim-texts">
+        <h3>04</h3>
+        <p>Geliştirme</p>
+      </div>
+      <div class="tanim-elements">
+        <p>
+          Modern teknolojiler ile veri güvenliğinizi de sağlayarak fikirlerinizi hayata geçirmek ister misiniz?
+        </p>
+        <a href="https://uibee.co/services"><button>Daha Fazla Bilgi Al</button></a>
+
+        <div class="elements">
+          <div class="element-1">
+            <h3 id="tanim-element-header">Web Servisler</h3>
+            <p id="tanim-gorus-desc">
+              Süreçleri otomatikleştirmek ve hızlı işlem yapabilme 
+              adına ürünlere özel uyarlanmış web ürünleri geliştiriyoruz.
+            </p>
+          </div>
+          <div class="element-2">
+            <h3 id="tanim-element-header">Native Mobil Uygulama Geliştirme</h3>
+            <p id="tanim-gorus-desc">
+              Android ve iOS cihazlara özel mobil uygulamalar
+               oluşturuyor ve bunları hızlı bir şekilde mağazalarda sunabiliyoruz.
+            </p>
+          </div>
+        </div>
+        <div class="elements">
+          <div class="element-1">
+            <h3 id="tanim-element-header">Hibrit Mobil Uygulama Geliştirme</h3>
+            <p id="tanim-gorus-desc">
+              Birden çok platformlarda (Android ve iOS) kullanım için tek bir uygulama geliştiriyoruz.
+            </p>
+          </div>
+          <div class="element-2">
+            <h3 id="tanim-element-header">Veri Güvenliği</h3>
+            <p id="tanim-gorus-desc">
+              Ürününüzün kalitesini ve başarısı sağlamak amacıyla manuel ve otomatik güvenlik testlerinden geçiriyoruz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area">
+      <h3>İletişim</h3>
+      <a href="mailto:info@uibee.co" class="animate footer-a">İletişime Geç</a>
+      <div class="mail-adress">
+        <div class="eposta">
+          <span>E-Posta</span>
+          <a href="mailto:info@uibee.co" class="animate-min footer-mail">info@uibee.co</a>
+        </div>
+        <div class="adress">
+          <span>Adres</span>
+          <h5>
+            Karabük Üniversitesi Teknokent Ofis No:3-21-22 <br>Merkez/KARABÜK
+          </h5>
+        </div>
+      </div>
+      <div class="lisans">
+        © 2024 UIBee Labs
+        Tüm Hakları Saklıdır.
+      </div>
+    </div>
+    <div class="cookie-settings">
+      <p>Çerezleri, gerekli site işlevselliğini sağlamak, mümkün olan en iyi kullanıcı deneyimini sağlamak ve
+         gelecekteki iletişimleri uyarlamak için kullanıyoruz. Bu web sitesini kullanarak çerezlerin kullanımını 
+         kabul etmiş olursunuz. <br>
+         <span><a href="https://uibee.co/privacy-policy">Gizlilik Politikası</a></span>
+      </p>
+      <button id="cookie-button">Çerezleri Kabul Et</button>
+    </div>
+  </div>
+</body>
+</html>
